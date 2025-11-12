@@ -4,6 +4,7 @@ using namespace std;
 int main(){
     string a,b;
     cout<<"Enter the sentence: ";
+    cin.ignore();
     getline (cin,a);
     cout<<"Enter the 3 letter string to be searched: ";
     cin>>b;
@@ -16,4 +17,5 @@ int main(){
     }
     cout<<"not found";
     return 0;
+
 }
