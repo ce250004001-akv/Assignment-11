@@ -7,7 +7,9 @@ int main(){
     for(int i=0;i<100;i++){
         ptr[i]=i;
         /*    *ptr=i;
- You are modifying the pointer itself (ptr++), so by the end of the loop, ptr no longer points to the start of the array — it points past the end!Use a separate loop index, don’t increment ptr directly:*/   }
+ You are modifying the pointer itself (ptr++), so by the end of the loop, ptr no longer points to the start of the array — it
+ points past the end!Use a separate loop index, don’t increment ptr directly:*/ 
+    }
     ptr=(int*)realloc(ptr,200*sizeof(int));
     for(int i=100;i<200;i++){
         ptr[i]=i;
@@ -16,4 +18,5 @@ int main(){
         cout<<ptr[i]<<" ";
     }
     free(ptr);
+
 }
